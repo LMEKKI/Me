@@ -63,6 +63,7 @@ section {
 .heroText {
   letter-spacing: 0.8px;
   line-height: 1.2rem;
+  margin-bottom: 20px;
 }
 h1 {
   margin-bottom: 10px;
@@ -82,16 +83,49 @@ h1 {
   line-height: 4rem;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
+
 
 .switch {
   line-height: 150px;
 }
 
+
+
+.main1 {
+  display: flex;
+  flex-flow: nowrap ;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+}
+
+.main-img img {
+  height: 110px;
+  background-size: cover;
+  padding: 8px;
+  border-radius: 20%;
+
+}
+
+.main1  {
+  font-weight: 400;
+  font-size: .87rem;
+
+}
 .title {
   font-size: 1.1em;
   font-weight: 500;
   line-height: 3rem;
+}
+
+
+.material-symbols-outlined {
+  
+  display: inline-flex;
+    vertical-align: middle;
+}
+
+ .tryLearn:hover{
+  color: var(--flame);
 }
