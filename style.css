@@ -52,8 +52,9 @@ header {
   font-size: 0.72rem;
 }
 .link:hover {
-  color: var(--eerie-black);
-  font-size: 0.79rem;
+  color: var(--flame);
+  font-size: 0.75rem;
+  
 }
 
 section {
@@ -86,12 +87,13 @@ h1 {
 
 
 .switch {
-  line-height: 150px;
+  margin-top: 60px;;
+  line-height: 50px;
 }
 
 
 
-.main1 {
+.main1 ,.main2 ,.main3{
   display: flex;
   flex-flow: nowrap ;
   align-items: center;
@@ -105,15 +107,38 @@ h1 {
   background-size: cover;
   padding: 8px;
   border-radius: 20%;
+  v
 
 }
 
-.main1  {
+
+.main-img2 img {
+  height: 110px;
+  background-size: cover;
+  padding: 8px;
+  border-radius: 20%;
+  margin-top: 50px;
+
+
+}
+
+.main-img3 img {
+  height: 110px;
+  background-size: cover;
+  border-radius: 20%;
+  margin-top: 50px;
+  padding: 8px;
+  
+
+}
+.main1 , .main2,.main3 {
   font-weight: 400;
   font-size: .87rem;
+  position: relative;
 
 }
 .title {
+  margin-top: 60px;;
   font-size: 1.1em;
   font-weight: 500;
   line-height: 3rem;
@@ -123,9 +148,85 @@ h1 {
 .material-symbols-outlined {
   
   display: inline-flex;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
- .tryLearn:hover{
+ .tryLearn:hover, .social a:hover{
   color: var(--flame);
+  font-size: 1rem;
+}
+
+
+.main1::before  {
+  content: "2023";
+  left: 1px;
+  top: 40px;
+  position: absolute;
+  font-weight: 300;
+  font-size: .87rem;
+  color: var(--pale-silver);
+
+}
+
+.main2::before  {
+  content: "2023";
+  left: 1px;
+  top: 40px;
+  position: absolute;
+  font-weight: 300;
+  font-size: .87rem;
+  color: var(--pale-silver);
+
+}
+
+
+.main3::before  {
+  content: "2023";
+  left: 1px;
+  top: 40px;
+  position: absolute;
+  font-weight: 300;
+  font-size: .87rem;
+  color: var(--pale-silver);
+
+}
+
+
+footer {
+  margin-left: 62px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 10px;
+  margin-bottom: 15px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  transition: all 300ms;
+
+}
+.social a {
+  font-weight: 300;
+  font-size: .97rem;
+}
+
+@media (min-width: 200px) {
+  section , footer{
+    margin-left: 28px;
+
+  }
+  h3 {
+    margin-left: -1px;
+  }
+  .social{
+    margin-right: 22px;
+  }
+
 }
